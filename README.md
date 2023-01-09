@@ -1,6 +1,8 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Description
+
+The application allows you to input your errands of the working hour based on the time scheduled. Input errands is color-coded based on the time of the day. The input record is stored and will not be lost during page reloads.
 
 
 ## User Story
@@ -42,5 +44,3 @@ https://yanqinglou.github.io/MYERRANDSTRACKER-2023/
 * The URL of the GitHub repository, with a unique name and a README describing the project
 https://github.com/yanqinglou/MYERRANDSTRACKER-2023
 
-- - -
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
