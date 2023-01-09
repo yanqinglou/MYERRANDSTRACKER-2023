@@ -16,6 +16,9 @@
 // past, present, and future classes? How can Day.js be used to get the
 // current hour in 24-hour time?
 
+currentDate = document.getElementById('currentdate')
+currentDate.textContent = dayjs().format("MMMM, dddd, D")
+
 var todayHour = dayjs().format("HH");
 var hourAM = $(".am");
 var hourPM = $(".pm");
@@ -84,15 +87,9 @@ if (todayHour === 12) {
 var textInput = { id: "", text: "" };
 var savelog = [];
 var scheduleSaved = localStorage.getItem("schedulesaved");
-// var textInput9 = localStorage.getItem("textinput9");
-// var textInput10 = localStorage.getItem("textinput10");
-// var textInput11 = localStorage.getItem("textinput11");
 var btnEl = $("button");
 var textareaInput = $("textarea");
 
-// textareaInput[0].value = localStorage.getItem("textinput9")
-// textareaInput[1].value = localStorage.getItem("textinput10")
-// textareaInput[2].value = localStorage.getItem("textinput11")
 getSchedule = JSON.parse(localStorage.getItem("schedulesaved"));
 
 if (getSchedule) {
@@ -115,19 +112,3 @@ btnEl.on("click", function () {
   textInput = { id: "", text: "" };
 });
 
-// (btnEl[1]).on("click",function(){
-//   var parentBox = event.target.parentElement
-//   console.log(parentBox)
-//   textInput9 = parentBox.children[1].value
-//   localStorage.setItem("textinput10", textInput10)
-// })
-
-// TODO: Add code to get any user input that was saved in localStorage and set
-// the values of the corresponding textarea elements. HINT: How can the id
-// attribute of each time-block be used to do this?
-//
-// TODO: Add code to display the current date in the header of the page.
-
-//get current
-//select all the time div and put it into a array
-//if time dive.textcontent
